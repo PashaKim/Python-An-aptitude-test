@@ -1,0 +1,8 @@
+Написать скрипт, который принимает строку, состоящую из слов, разделённых символом _ или - и возвращает строку в camel case. При этом регистр первого символа менять не нужно.
+
+
+the_phantom_menace -> thePhantomMenace
+
+The-Phantom-Menace -> ThePhantomMenace
+
+
