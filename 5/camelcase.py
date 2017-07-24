@@ -8,11 +8,11 @@ The-Phantom-Menace -> ThePhantomMenace
  
 """
 
-your_input = str(input('Генератор СamelСase, введите вашу строку: ').title())
+your_input = str(input('Генератор СamelСase, введите вашу строку: '))
 d = {'-': '', '_':''}
 t = list(your_input) # Первая буква
 for x,y in d.items():
-    your_input = your_input.replace(x, y)
+    your_input = your_input.title().replace(x, y)
 l = list(your_input)
 l.pop(0)
 strl = ''.join(l)
