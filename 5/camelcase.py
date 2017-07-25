@@ -1,19 +1,21 @@
 """
-Написать скрипт, который принимает строку, состоящую из слов, разделённых символом _ или -
+Скрипт, который принимает строку, состоящую из слов, разделённых символом _ или -
 и возвращает строку в camel case. При этом регистр первого символа менять не нужно.
 
 
 the_phantom_menace -> thePhantomMenace
 The-Phantom-Menace -> ThePhantomMenace
  
+ Python3.6.1
 """
 
 your_input = str(input('Генератор СamelСase, введите вашу строку: '))
 d = {'-': '', '_':''}
 t = list(your_input) # Первая буква
+word = your_input.title()
 for x,y in d.items():
-    your_input = your_input.title().replace(x, y)
-l = list(your_input)
-l.pop(0)
-strl = ''.join(l)
+    word = word.replace(x, y)
+lst = list(word)
+lst.pop(0)
+strl = ''.join(lst)
 print(t[0]+strl)
