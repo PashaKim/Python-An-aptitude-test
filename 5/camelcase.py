@@ -9,7 +9,7 @@ The-Phantom-Menace -> ThePhantomMenace
  Python3.6.1
 """
 
-your_input = str(input('Генератор СamelСase, введите вашу строку: '))
+your_input = input('Генератор СamelСase, введите вашу строку: ')
 d = {'-': '', '_':''}
 t = your_input[0] # Первая буква
 word = your_input.title()
